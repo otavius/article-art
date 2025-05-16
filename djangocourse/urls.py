@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("app.urls"))
+    # npw this the root of the website
+    path("articles/", include("app.urls"))
 ]
