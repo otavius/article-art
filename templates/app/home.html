@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Articles</h1>
-    <ul>
-      {% for article in articles %}
-      <li>{{article.title}} with {{article.word_count}} words</li>
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+{% extends 'app/base.html' %}
+{% block content  %}
+<h1>Articles</h1>
+
+<a href="{% url 'create_article' %}">Create Article</a> 
+
+{% if articles %}
+<ul>
+  {% for article in articles %}
+
+  <li>
+    <a href="{% url 'update_article' article.id %}">{{article.title}}</a> with {{article.word_count}} word{{article.word_count | pluralize}}.
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+  <p>You have no articles yet.</p>
+{% endif %}
+
+{% endblock content%}
+
