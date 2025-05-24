@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-24 12:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+
+#: app/managers.py:7
+msgid "The Email must be set"
+msgstr "El correo electronico debe estar establecido"
+
+#: app/models.py:12
+msgid "email address"
+msgstr "direccion de correo electronico"
+
+#: app/models.py:21
+msgid "Article"
+msgstr "Articulo"
+
+#: app/models.py:22
+msgid "Articles"
+msgstr "Articulos"
+
+#: app/models.py:23
+msgid "Title"
+msgstr "Titulo"
+
+#: app/models.py:24
+msgid "Content"
+msgstr "Contenido"
+
+#: app/models.py:25
+msgid "Word Count"
+msgstr "recuento de palabras"
+
+#: app/models.py:26
+msgid "X Post"
+msgstr "Post de twiiter"
+
+#: app/models.py:27
+msgid "Status"
+msgstr "estado"
+
+#: app/models.py:28
+msgid "Created at"
+msgstr "creado en"
+
+#: app/models.py:29
+msgid "Updated at"
+msgstr "actualizado en "
+
+#: app/models.py:30
+msgid "Creator"
+msgstr "creador"

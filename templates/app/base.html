@@ -6,7 +6,21 @@
     <title>Djangocourse</title>
 </head>
 <body>
-    <nav>Common Navigation bar</nav>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Articles</a></li>
+            <li>
+                {% if user.is_authenticated %}
+                    <form action="{% url 'account_logout' %}" method="POST">
+                        {% csrf_token %}
+                        <button type="submit">Log out</button>
+                    </form>
+                {% else %}
+                    <a href="{% url 'account_login' %}">Log in </a>
+                {% endif %}
+            </li>
+        </ul>
+    </nav>
     {% block content %}
         
     {% endblock content %}
